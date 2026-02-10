@@ -59,9 +59,9 @@
         </ul>
       </div>
       <div class="stats">
-        <div class="stat-box"><div class="stat-number">0</div><div class="stat-label">전체 공고</div></div>
+        <div class="stat-box"><div class="stat-number">4</div><div class="stat-label">전체 공고</div></div>
         <div class="stat-box"><div class="stat-number">0</div><div class="stat-label">🇰🇷 한국어 OK</div></div>
-        <div class="stat-box"><div class="stat-number">0</div><div class="stat-label">⭐ 추천</div></div>
+        <div class="stat-box"><div class="stat-number">2</div><div class="stat-label">⭐ 추천</div></div>
       </div>
     </header>
     
@@ -72,13 +72,79 @@
       <button class="filter-chip">🔧 Licensed</button>
     </div>
     
-    <h2 class="section-title">🔍 검색 중...</h2>
-    <div class="no-jobs">
-      <p>🔧 배관공 공고를 검색 중입니다...</p>
-      <p style="margin-top: 10px;">잠시만 기다려주세요!</p>
+    <h2 class="section-title">⭐ 추천 공고</h2>
+    <div class="job-grid">
+      <div class="job-card recommended" onclick="window.open('https://www.indeed.com/jobs?q=plumbing+assistant+ABR&l=New+York', '_blank')">
+        <div class="job-title">Plumbing Assistant</div>
+        <div class="job-badges">
+          <span class="badge badge-new">🆕 NEW</span>
+          <span class="badge badge-rec">⭐ 추천</span>
+          <span class="badge badge-helper">Helper</span>
+        </div>
+        <div class="job-company">ABR Plumbing & Heating Contractors</div>
+        <div class="job-location">📍 New York, NY 10001 (Chelsea)</div>
+        <div class="job-pay">💰 401(k), 건강보험, 치과, 안과</div>
+        <div style="color: #888; font-size: 0.85rem; margin-top: 10px;">
+          ✅ 복지 좋음 (401k, 보험)<br>
+          ✅ 맨해튼 Chelsea 위치<br>
+          ✅ Helper 포지션 (경험 쌓기 좋음)
+        </div>
+      </div>
+      
+      <div class="job-card recommended" onclick="window.open('https://www.indeed.com/jobs?q=plumber+helper+hackensack+meridian&l=NJ', '_blank')">
+        <div class="job-title">Plumber's Helper - Full Time</div>
+        <div class="job-badges">
+          <span class="badge badge-new">🆕 NEW</span>
+          <span class="badge badge-rec">⭐ 추천</span>
+          <span class="badge badge-helper">Helper</span>
+        </div>
+        <div class="job-company">Hackensack Meridian Health</div>
+        <div class="job-location">📍 Hackensack, NJ 07601</div>
+        <div class="job-pay">💰 학비지원, 건강보험, 직원할인</div>
+        <div style="color: #888; font-size: 0.85rem; margin-top: 10px;">
+          ✅ 대형 병원 (안정적)<br>
+          ✅ 학비 지원 (Tuition reimbursement)<br>
+          ✅ Day shift
+        </div>
+      </div>
     </div>
     
-    <div class="last-updated">마지막 업데이트: 2026-02-10 10:24 | 검색 진행 중</div>
+    <h2 class="section-title">📋 전체 공고</h2>
+    <div class="job-grid">
+      <div class="job-card" onclick="window.open('https://www.indeed.com/jobs?q=plumbing+apprentice+chivalry&l=NY', '_blank')">
+        <div class="job-title">Plumbing Apprentice</div>
+        <div class="job-badges">
+          <span class="badge badge-new">🆕 NEW</span>
+          <span class="badge badge-apprentice">Apprentice</span>
+        </div>
+        <div class="job-company">Chivalry Plumbing, Heating & Cooling</div>
+        <div class="job-location">📍 Massapequa, NY 11758</div>
+        <div class="job-pay">💰 교육 제공, 유급휴가</div>
+      </div>
+      
+      <div class="job-card" onclick="window.open('https://www.indeed.com/jobs?q=apprentice+plumber+drain+care&l=NJ', '_blank')">
+        <div class="job-title">Apprentice Plumber</div>
+        <div class="job-badges">
+          <span class="badge badge-new">🆕 NEW</span>
+          <span class="badge badge-apprentice">Apprentice</span>
+        </div>
+        <div class="job-company">Drain care pros</div>
+        <div class="job-location">📍 Union, NJ 07083</div>
+        <div class="job-pay">💰 교육 제공</div>
+      </div>
+    </div>
+    
+    <h2 class="section-title">⚠️ 참고사항</h2>
+    <div style="background: rgba(255,152,0,0.1); border: 1px solid #ff9800; border-radius: 12px; padding: 20px; margin-bottom: 20px;">
+      <p style="color: #ff9800; font-weight: bold; margin-bottom: 10px;">🇰🇷 한국어 가능 공고를 찾고 있습니다!</p>
+      <p style="color: #aaa; font-size: 0.9rem;">
+        • Indeed에서 "plumber korean" 검색 → 0건<br>
+        • 한인 커뮤니티 사이트 (미주중앙일보, 벼룩시장 등) 추가 검색 예정<br>
+        • 한인 업체 공고 발견 시 즉시 업데이트됩니다!
+      </p>
+    </div>
+    
+    <div class="last-updated">마지막 업데이트: 2026-02-10 10:30 | 뉴욕 배관공 | 매일 오전 10시 자동 업데이트</div>
   </div>
 </body>
 </html>
