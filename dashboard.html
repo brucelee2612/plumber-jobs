@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔧 배관공 구인공고 대시보드</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; color: #e4e4e4; padding: 20px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    header { text-align: center; padding: 30px 0; border-bottom: 1px solid #333; margin-bottom: 30px; }
+    h1 { font-size: 2rem; background: linear-gradient(90deg, #ff9800, #ff5722); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+    .profile-box { background: rgba(255, 152, 0, 0.1); border: 1px solid #ff9800; border-radius: 12px; padding: 15px 20px; margin: 20px auto; max-width: 600px; text-align: left; }
+    .profile-box h3 { color: #ff9800; margin-bottom: 10px; }
+    .profile-box ul { list-style: none; }
+    .profile-box li { margin: 5px 0; color: #aaa; }
+    .profile-box li strong { color: #fff; }
+    .stats { display: flex; justify-content: center; gap: 30px; margin-top: 20px; flex-wrap: wrap; }
+    .stat-box { background: rgba(255,255,255,0.05); padding: 15px 25px; border-radius: 12px; text-align: center; }
+    .stat-number { font-size: 2rem; font-weight: bold; color: #ff9800; }
+    .stat-label { font-size: 0.85rem; color: #888; }
+    .quick-filters { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+    .filter-chip { padding: 6px 14px; font-size: 0.85rem; border: 1px solid #444; border-radius: 20px; background: transparent; color: #aaa; cursor: pointer; transition: all 0.2s; }
+    .filter-chip:hover { border-color: #ff9800; color: #fff; }
+    .filter-chip.active { background: #ff9800; border-color: #ff9800; color: #fff; }
+    .job-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; }
+    .job-card { background: rgba(255,255,255,0.05); border-radius: 16px; padding: 20px; border: 1px solid #333; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; }
+    .job-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); border-color: #ff9800; }
+    .job-card.recommended { border-color: #ffd700; background: linear-gradient(135deg, rgba(255,215,0,0.08) 0%, rgba(255,165,0,0.05) 100%); }
+    .job-title { font-size: 1.05rem; font-weight: 600; color: #fff; line-height: 1.4; }
+    .job-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+    .badge { font-size: 0.7rem; padding: 3px 8px; border-radius: 10px; font-weight: 500; }
+    .badge-new { background: #c41e3a; color: #fff; }
+    .badge-korean { background: #1976d2; color: #fff; border: 2px solid #fff; font-weight: bold; }
+    .badge-helper { background: #4caf50; color: #fff; }
+    .badge-licensed { background: #9c27b0; color: #fff; }
+    .badge-apprentice { background: #ff9800; color: #000; }
+    .badge-rec { background: #ffd700; color: #000; }
+    .job-company { color: #ff9800; font-weight: 500; margin-bottom: 6px; margin-top: 10px; }
+    .job-location { color: #888; font-size: 0.9rem; }
+    .job-pay { color: #4ade80; font-weight: 600; margin-top: 8px; }
+    .section-title { font-size: 1.3rem; margin: 30px 0 20px; color: #fff; }
+    .last-updated { text-align: center; color: #666; font-size: 0.85rem; margin-top: 40px; padding: 20px; }
+    .no-jobs { text-align: center; padding: 50px; color: #888; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🔧 배관공 구인공고 (뉴욕)</h1>
+      <p style="color: #888;">AI가 찾아주는 배관공 일자리</p>
+      <div class="profile-box">
+        <h3>👤 구직자 프로필</h3>
+        <ul>
+          <li><strong>직종:</strong> 배관공 (Plumber)</li>
+          <li><strong>언어:</strong> 🇰🇷 한국어만 (영어 못함)</li>
+          <li><strong>지역:</strong> New York (Queens 선호)</li>
+          <li><strong>비고:</strong> 한국인 업체/한국어 사용 가능한 곳 우선</li>
+        </ul>
+      </div>
+      <div class="stats">
+        <div class="stat-box"><div class="stat-number">0</div><div class="stat-label">전체 공고</div></div>
+        <div class="stat-box"><div class="stat-number">0</div><div class="stat-label">🇰🇷 한국어 OK</div></div>
+        <div class="stat-box"><div class="stat-number">0</div><div class="stat-label">⭐ 추천</div></div>
+      </div>
+    </header>
+    
+    <div class="quick-filters">
+      <button class="filter-chip active">📅 전체</button>
+      <button class="filter-chip">🇰🇷 한국어 OK</button>
+      <button class="filter-chip">👷 Helper</button>
+      <button class="filter-chip">🔧 Licensed</button>
+    </div>
+    
+    <h2 class="section-title">🔍 검색 중...</h2>
+    <div class="no-jobs">
+      <p>🔧 배관공 공고를 검색 중입니다...</p>
+      <p style="margin-top: 10px;">잠시만 기다려주세요!</p>
+    </div>
+    
+    <div class="last-updated">마지막 업데이트: 2026-02-10 10:24 | 검색 진행 중</div>
+  </div>
+</body>
+</html>
