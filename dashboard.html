@@ -39,6 +39,8 @@
         }
         .stat-number { font-size: 2.5em; font-weight: bold; color: #00d9ff; }
         .stat-label { color: #888; font-size: 0.9em; margin-top: 5px; }
+        .stat-new { background: rgba(74, 222, 128, 0.2); border-color: #4ade80; }
+        .stat-new .stat-number { color: #4ade80; }
         
         .profile-box {
             background: rgba(74, 222, 128, 0.1);
@@ -91,6 +93,7 @@
         }
         .badge-new { background: #4ade80; color: #000; }
         .badge-high { background: rgba(74, 222, 128, 0.2); color: #4ade80; }
+        .badge-money { background: #fbbf24; color: #000; }
         
         .job-details {
             display: grid;
@@ -160,25 +163,25 @@
         <header>
             <h1>🔧 배관공 구인 대시보드</h1>
             <p class="subtitle">Queens NY 지역 배관공 구인정보</p>
-            <p class="last-update">📅 마지막 업데이트: 2026년 2월 10일 14:37</p>
+            <p class="last-update">📅 마지막 업데이트: 2026년 2월 11일 11:00</p>
         </header>
 
         <div class="stats">
+            <div class="stat-card stat-new">
+                <div class="stat-number">+4</div>
+                <div class="stat-label">오늘 새 공고!</div>
+            </div>
             <div class="stat-card">
-                <div class="stat-number">6</div>
+                <div class="stat-number">10</div>
                 <div class="stat-label">총 공고</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">4</div>
+                <div class="stat-number">6</div>
                 <div class="stat-label">Queens 공고</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">3</div>
+                <div class="stat-number">6</div>
                 <div class="stat-label">헬퍼 포지션</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">0</div>
-                <div class="stat-label">한인 업체</div>
             </div>
         </div>
 
@@ -189,7 +192,105 @@
             <p class="profile-item">💰 우선순위: 한인 업체, 주급/캐시</p>
         </div>
 
-        <h2 class="section-title">⭐ 추천 공고 (Queens 헬퍼)</h2>
+        <h2 class="section-title">🆕 오늘 발견! (2/11)</h2>
+
+        <div class="job-card high-match">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">💰 Plumber Helper Wanted!!!!</div>
+                    <div class="job-company">Master Fire Extinguishers Inc</div>
+                </div>
+                <span class="job-badge badge-money">$30/hr!</span>
+            </div>
+            <div class="job-details">
+                <div class="detail-item"><span class="detail-icon">📍</span> Bronx, NY</div>
+                <div class="detail-item"><span class="detail-icon">💼</span> Full-time</div>
+                <div class="detail-item"><span class="detail-icon">💰</span> $30/시간</div>
+                <div class="detail-item"><span class="detail-icon">📅</span> 2026-02-11</div>
+            </div>
+            <div class="requirements">
+                <span class="req-tag">경험 약간 선호</span>
+                <span class="req-tag">훈련 가능!</span>
+                <span class="req-tag">50lb 들기</span>
+            </div>
+            <div class="job-notes">💰 $30/hr 최고 시급! 훈련 제공! Quick Apply 가능!</div>
+            <div class="job-actions">
+                <a href="https://www.ziprecruiter.com/c/MASTER-FIRE-EXTINGUISHERS-INC/Job/Plumber-Helper-Wanted!!!!/-in-Bronx,NY?jid=9c142c9c32ff3adf" target="_blank" class="btn btn-primary">공고 보기 →</a>
+            </div>
+        </div>
+
+        <div class="job-card high-match">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Plumbers Helper</div>
+                    <div class="job-company">Tidal Plumbing & Heating LLC</div>
+                </div>
+                <span class="job-badge badge-new">NEW! Queens!</span>
+            </div>
+            <div class="job-details">
+                <div class="detail-item"><span class="detail-icon">📍</span> Whitestone, Queens</div>
+                <div class="detail-item"><span class="detail-icon">💼</span> Full-time</div>
+                <div class="detail-item"><span class="detail-icon">💰</span> $20-$25/시간</div>
+                <div class="detail-item"><span class="detail-icon">📅</span> 2026-02-11</div>
+            </div>
+            <div class="requirements">
+                <span class="req-tag">1-2년 경험</span>
+                <span class="req-tag">운전면허</span>
+                <span class="req-tag">Drug test</span>
+            </div>
+            <div class="job-notes">⭐ Queens 헬퍼! 오래된 배관회사. 401(k), PTO 제공! 성장 의지 중요!</div>
+            <div class="job-actions">
+                <a href="https://www.indeed.com/viewjob?jk=d997cece1d9a15cb" target="_blank" class="btn btn-primary">공고 보기 →</a>
+            </div>
+        </div>
+
+        <div class="job-card high-match">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Plumber's Helper</div>
+                    <div class="job-company">Osso Plumbing & Heating Corp</div>
+                </div>
+                <span class="job-badge badge-new">NEW!</span>
+            </div>
+            <div class="job-details">
+                <div class="detail-item"><span class="detail-icon">📍</span> New York, NY</div>
+                <div class="detail-item"><span class="detail-icon">💼</span> Full-time</div>
+                <div class="detail-item"><span class="detail-icon">💰</span> $20/시간</div>
+                <div class="detail-item"><span class="detail-icon">📅</span> 2026-02-11</div>
+            </div>
+            <div class="requirements">
+                <span class="req-tag">NYC 운전면허 선호</span>
+            </div>
+            <div class="job-notes">⭐ 30년 가족회사! 유연하고 배우기 좋은 환경!</div>
+            <div class="job-actions">
+                <a href="https://www.ziprecruiter.com/c/osso-plumbing-and-heating-corp/Job/Plumbers-Helper/-in-New-York,NY?jid=91491052a536ae65" target="_blank" class="btn btn-primary">공고 보기 →</a>
+            </div>
+        </div>
+
+        <div class="job-card medium-match">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Plumber</div>
+                    <div class="job-company">Bluewater Plumbing & Heating, Inc.</div>
+                </div>
+                <span class="job-badge badge-new">NEW! Queens!</span>
+            </div>
+            <div class="job-details">
+                <div class="detail-item"><span class="detail-icon">📍</span> Middle Village, Queens</div>
+                <div class="detail-item"><span class="detail-icon">💼</span> Full-time</div>
+                <div class="detail-item"><span class="detail-icon">💰</span> $20-$45/시간</div>
+                <div class="detail-item"><span class="detail-icon">📅</span> 2026-02-11</div>
+            </div>
+            <div class="requirements">
+                <span class="req-tag">경험 필요</span>
+            </div>
+            <div class="job-notes">Queens! 배관/난방/AC/신축공사. PTO, Medical 제공!</div>
+            <div class="job-actions">
+                <a href="https://www.ziprecruiter.com/c/Bluewater-Plumbing-&-Heating,-Inc./Job/Plumber/-in-Middle-Village,NY?jid=99a916c390ae91bf" target="_blank" class="btn btn-primary">공고 보기 →</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">📋 기존 공고</h2>
 
         <div class="job-card high-match">
             <div class="job-header">
@@ -197,7 +298,6 @@
                     <div class="job-title">Plumber Helper</div>
                     <div class="job-company">Plumbing & Heating Corp</div>
                 </div>
-                <span class="job-badge badge-new">NEW</span>
             </div>
             <div class="job-details">
                 <div class="detail-item"><span class="detail-icon">📍</span> Middle Village, Queens</div>
@@ -222,7 +322,6 @@
                     <div class="job-title">Plumber's Helper</div>
                     <div class="job-company">Queens HVAC Company</div>
                 </div>
-                <span class="job-badge badge-new">NEW</span>
             </div>
             <div class="job-details">
                 <div class="detail-item"><span class="detail-icon">📍</span> Middle Village, Queens</div>
@@ -241,15 +340,12 @@
             </div>
         </div>
 
-        <h2 class="section-title">⚡ 최신 공고</h2>
-
         <div class="job-card medium-match">
             <div class="job-header">
                 <div>
                     <div class="job-title">Service Plumber Subcontractor</div>
                     <div class="job-company">Residential Service</div>
                 </div>
-                <span class="job-badge badge-new">2/9 NEW!</span>
             </div>
             <div class="job-details">
                 <div class="detail-item"><span class="detail-icon">📍</span> Elmhurst, Queens</div>
@@ -262,13 +358,34 @@
                 <span class="req-tag">자가 차량</span>
                 <span class="req-tag">자기 도구</span>
             </div>
-            <div class="job-notes">⚡ 어제 올라온 최신 공고! 당일 작업/당일 급여 - 캐시 가능성 높음!</div>
+            <div class="job-notes">⚡ 당일 작업/당일 급여 - 캐시 가능성 높음!</div>
             <div class="job-actions">
                 <a href="https://newyork.craigslist.org/que/trd/d/elmhurst-service-plumber-subcontractor/7914115280.html" target="_blank" class="btn btn-primary">공고 보기 →</a>
             </div>
         </div>
 
-        <h2 class="section-title">📋 기타 공고</h2>
+        <div class="job-card medium-match">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Plumber's Helper</div>
+                    <div class="job-company">Unknown</div>
+                </div>
+            </div>
+            <div class="job-details">
+                <div class="detail-item"><span class="detail-icon">📍</span> Manhattan</div>
+                <div class="detail-item"><span class="detail-icon">💼</span> Full-time</div>
+                <div class="detail-item"><span class="detail-icon">💰</span> 경험 기반</div>
+                <div class="detail-item"><span class="detail-icon">📅</span> 2026-01-22</div>
+            </div>
+            <div class="requirements">
+                <span class="req-tag">F60/G60</span>
+                <span class="req-tag">OSHA/SST40</span>
+            </div>
+            <div class="job-notes">Manhattan. 헬퍼 포지션.</div>
+            <div class="job-actions">
+                <a href="https://newyork.craigslist.org/brx/trd/d/new-york-plumbers-helper/7910322297.html" target="_blank" class="btn btn-primary">공고 보기 →</a>
+            </div>
+        </div>
 
         <div class="job-card low-match">
             <div class="job-header">
@@ -320,32 +437,9 @@
             </div>
         </div>
 
-        <div class="job-card medium-match">
-            <div class="job-header">
-                <div>
-                    <div class="job-title">Plumber's Helper</div>
-                    <div class="job-company">Unknown</div>
-                </div>
-            </div>
-            <div class="job-details">
-                <div class="detail-item"><span class="detail-icon">📍</span> Manhattan</div>
-                <div class="detail-item"><span class="detail-icon">💼</span> Full-time</div>
-                <div class="detail-item"><span class="detail-icon">💰</span> 경험 기반</div>
-                <div class="detail-item"><span class="detail-icon">📅</span> 2026-01-22</div>
-            </div>
-            <div class="requirements">
-                <span class="req-tag">F60/G60</span>
-                <span class="req-tag">OSHA/SST40</span>
-            </div>
-            <div class="job-notes">Manhattan. 헬퍼 포지션.</div>
-            <div class="job-actions">
-                <a href="https://newyork.craigslist.org/brx/trd/d/new-york-plumbers-helper/7910322297.html" target="_blank" class="btn btn-primary">공고 보기 →</a>
-            </div>
-        </div>
-
         <footer>
-            <p>🔧 배관공 구인 트래커 | 데이터 소스: Craigslist NY</p>
-            <p style="margin-top: 10px;">한인 업체 공고 발견시 업데이트 예정</p>
+            <p>🔧 배관공 구인 트래커 | 데이터 소스: Indeed, ZipRecruiter, Craigslist</p>
+            <p style="margin-top: 10px;">한인 업체 공고 발견시 우선 알림!</p>
         </footer>
     </div>
 </body>

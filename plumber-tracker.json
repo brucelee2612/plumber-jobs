@@ -1,11 +1,77 @@
 {
-  "lastChecked": "2026-02-10T14:37:00+09:00",
+  "lastChecked": "2026-02-11T11:00:00+09:00",
   "profile": {
     "language": "korean-only",
     "preferredArea": "Queens",
     "priority": "한인 업체, 주급/캐시"
   },
   "jobs": [
+    {
+      "id": "indeed-tidal-whitestone",
+      "title": "Plumbers Helper",
+      "company": "Tidal Plumbing & Heating LLC",
+      "location": "Whitestone, Queens",
+      "source": "Indeed/ZipRecruiter",
+      "url": "https://www.indeed.com/viewjob?jk=d997cece1d9a15cb",
+      "posted": "2026-02-11",
+      "requirements": ["1-2년 경험", "운전면허", "Drug test", "깔끔한 외모"],
+      "pay": "$20-$25/시간",
+      "benefits": ["401(k)", "PTO"],
+      "type": "Full-time",
+      "notes": "⭐ NEW! Queens 헬퍼! 오래된 배관회사. 성장 의지 중요!",
+      "addedAt": "2026-02-11",
+      "status": "new",
+      "match": "high"
+    },
+    {
+      "id": "zip-osso-nyc",
+      "title": "Plumber's Helper",
+      "company": "Osso Plumbing & Heating Corp",
+      "location": "New York, NY",
+      "source": "ZipRecruiter",
+      "url": "https://www.ziprecruiter.com/c/osso-plumbing-and-heating-corp/Job/Plumbers-Helper/-in-New-York,NY?jid=91491052a536ae65",
+      "posted": "2026-02-11",
+      "requirements": ["NYC 운전면허 선호"],
+      "pay": "$20/시간",
+      "type": "Full-time",
+      "notes": "⭐ 30년 가족회사! 유연하고 배우기 좋은 환경!",
+      "addedAt": "2026-02-11",
+      "status": "new",
+      "match": "high"
+    },
+    {
+      "id": "zip-masterfire-bronx",
+      "title": "Plumber Helper Wanted!!!!",
+      "company": "Master Fire Extinguishers Inc",
+      "location": "Bronx, NY",
+      "source": "ZipRecruiter",
+      "url": "https://www.ziprecruiter.com/c/MASTER-FIRE-EXTINGUISHERS-INC/Job/Plumber-Helper-Wanted!!!!/-in-Bronx,NY?jid=9c142c9c32ff3adf",
+      "posted": "2026-02-11",
+      "requirements": ["경험 약간 선호 (훈련 가능)", "50lb 이상 들기 가능"],
+      "pay": "$30/시간",
+      "type": "Full-time",
+      "notes": "💰 $30/hr! 훈련 제공! Quick Apply 가능!",
+      "addedAt": "2026-02-11",
+      "status": "new",
+      "match": "high"
+    },
+    {
+      "id": "zip-bluewater-middlevillage",
+      "title": "Plumber",
+      "company": "Bluewater Plumbing & Heating, Inc.",
+      "location": "Middle Village, Queens",
+      "source": "ZipRecruiter",
+      "url": "https://www.ziprecruiter.com/c/Bluewater-Plumbing-&-Heating,-Inc./Job/Plumber/-in-Middle-Village,NY?jid=99a916c390ae91bf",
+      "posted": "2026-02-11",
+      "requirements": ["경험 필요"],
+      "pay": "$20-$45/시간",
+      "benefits": ["PTO", "Medical"],
+      "type": "Full-time",
+      "notes": "Queens! 배관/난방/AC/신축공사. 성장하는 회사!",
+      "addedAt": "2026-02-11",
+      "status": "new",
+      "match": "medium"
+    },
     {
       "id": "cl-7908885312",
       "title": "Plumber Helper",
@@ -19,7 +85,7 @@
       "type": "Full-time",
       "notes": "Queens jobbing shop. 헬퍼 포지션!",
       "addedAt": "2026-02-10",
-      "status": "new",
+      "status": "existing",
       "match": "high"
     },
     {
@@ -36,7 +102,7 @@
       "type": "Full-time",
       "notes": "성장하는 배관/난방/에어컨 회사. 헬퍼 포지션!",
       "addedAt": "2026-02-10",
-      "status": "new",
+      "status": "existing",
       "match": "high"
     },
     {
@@ -50,9 +116,9 @@
       "requirements": ["경험 필수", "자가 차량/도구"],
       "pay": "% 기반, 당일급여!",
       "type": "Subcontractor/On-call",
-      "notes": "⚡ 최신 공고! 당일 작업/당일 급여 - 캐시 가능성",
+      "notes": "⚡ 당일 작업/당일 급여 - 캐시 가능성",
       "addedAt": "2026-02-10",
-      "status": "new",
+      "status": "existing",
       "match": "medium"
     },
     {
@@ -69,7 +135,7 @@
       "type": "Full-time",
       "notes": "경력자용. 급여 좋음!",
       "addedAt": "2026-02-10",
-      "status": "new",
+      "status": "existing",
       "match": "low"
     },
     {
@@ -86,7 +152,7 @@
       "type": "Full-time",
       "notes": "Brooklyn. 경력자용.",
       "addedAt": "2026-02-10",
-      "status": "new",
+      "status": "existing",
       "match": "low"
     },
     {
@@ -102,14 +168,15 @@
       "type": "Full-time",
       "notes": "Manhattan. 헬퍼 포지션.",
       "addedAt": "2026-02-10",
-      "status": "new",
+      "status": "existing",
       "match": "medium"
     }
   ],
   "stats": {
-    "totalJobs": 6,
-    "queensJobs": 4,
-    "helperPositions": 3,
-    "koreanBusinesses": 0
+    "totalJobs": 10,
+    "queensJobs": 6,
+    "helperPositions": 6,
+    "koreanBusinesses": 0,
+    "newJobsToday": 4
   }
 }
