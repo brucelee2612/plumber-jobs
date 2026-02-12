@@ -1,11 +1,28 @@
 {
-  "lastChecked": "2026-02-11T11:00:00+09:00",
+  "lastChecked": "2026-02-12T11:00:00+09:00",
   "profile": {
     "language": "korean-only",
     "preferredArea": "Queens",
     "priority": "한인 업체, 주급/캐시"
   },
   "jobs": [
+    {
+      "id": "indeed-rosal-queens",
+      "title": "Plumber/Mechanic",
+      "company": "RO-SAL PLUMBING & HEATING",
+      "location": "Queens, NY 11691",
+      "source": "Indeed",
+      "url": "https://www.indeed.com/viewjob?jk=b0a7a394f4de7cda",
+      "posted": "2026-02-12",
+      "requirements": ["5년 경험", "OSHA-40 필수", "운전면허 선호", "Cast iron/black/copper pipe 경험"],
+      "pay": "$20/시간+",
+      "benefits": ["401(k)", "건강보험", "유급휴일", "병가", "휴가"],
+      "type": "Full-time",
+      "notes": "⚠️ 경력자용! 5년 경험 + OSHA-40 필수. Queens 배관/난방/스프링클러 회사.",
+      "addedAt": "2026-02-12",
+      "status": "new",
+      "match": "low"
+    },
     {
       "id": "indeed-tidal-whitestone",
       "title": "Plumbers Helper",
@@ -18,9 +35,9 @@
       "pay": "$20-$25/시간",
       "benefits": ["401(k)", "PTO"],
       "type": "Full-time",
-      "notes": "⭐ NEW! Queens 헬퍼! 오래된 배관회사. 성장 의지 중요!",
+      "notes": "⭐ Queens 헬퍼! 오래된 배관회사. 성장 의지 중요!",
       "addedAt": "2026-02-11",
-      "status": "new",
+      "status": "existing",
       "match": "high"
     },
     {
@@ -36,7 +53,7 @@
       "type": "Full-time",
       "notes": "⭐ 30년 가족회사! 유연하고 배우기 좋은 환경!",
       "addedAt": "2026-02-11",
-      "status": "new",
+      "status": "existing",
       "match": "high"
     },
     {
@@ -52,7 +69,7 @@
       "type": "Full-time",
       "notes": "💰 $30/hr! 훈련 제공! Quick Apply 가능!",
       "addedAt": "2026-02-11",
-      "status": "new",
+      "status": "existing",
       "match": "high"
     },
     {
@@ -69,7 +86,7 @@
       "type": "Full-time",
       "notes": "Queens! 배관/난방/AC/신축공사. 성장하는 회사!",
       "addedAt": "2026-02-11",
-      "status": "new",
+      "status": "existing",
       "match": "medium"
     },
     {
@@ -173,10 +190,13 @@
     }
   ],
   "stats": {
-    "totalJobs": 10,
-    "queensJobs": 6,
+    "totalJobs": 11,
+    "queensJobs": 7,
     "helperPositions": 6,
     "koreanBusinesses": 0,
-    "newJobsToday": 4
+    "newJobsToday": 1
+  },
+  "notes": {
+    "2026-02-12": "한인 사이트 접근 불가 (JobKoreaUSA 404, MissyUSA 404). 새 헬퍼 공고 없음. RO-SAL 공고는 경력자용(5년)."
   }
 }
